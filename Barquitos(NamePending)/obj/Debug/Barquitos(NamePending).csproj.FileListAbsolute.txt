@@ -1,0 +1,15 @@
+C:\Users\Carlos\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\bin\Barquitos(NamePending).dll
+C:\Users\Carlos\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\bin\Barquitos(NamePending).pdb
+C:\Users\Carlos\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).dll
+C:\Users\Carlos\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).pdb
+C:\Users\Alejandro\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\bin\Barquitos(NamePending).dll
+C:\Users\Alejandro\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\bin\Barquitos(NamePending).pdb
+C:\Users\Alejandro\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).csprojResolveAssemblyReference.cache
+C:\Users\Alejandro\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).dll
+C:\Users\Alejandro\Dropbox\Windows8\IntentoProyectoHTMLJS\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).pdb
+C:\Users\Carlos\Dropbox\Windows8\Proyecto\Barquitos(NamePending)\Barquitos(NamePending)\bin\Barquitos(NamePending).dll
+C:\Users\Carlos\Dropbox\Windows8\Proyecto\Barquitos(NamePending)\Barquitos(NamePending)\bin\Barquitos(NamePending).pdb
+C:\Users\Carlos\Dropbox\Windows8\Proyecto\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Dropbox\Windows8\Proyecto\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).dll
+C:\Users\Carlos\Dropbox\Windows8\Proyecto\Barquitos(NamePending)\Barquitos(NamePending)\obj\Debug\Barquitos(NamePending).pdb
