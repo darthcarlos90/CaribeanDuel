@@ -29,7 +29,9 @@
 
     // Variables que guardan los sonidos del video juego.
     var snd = new Audio("Assets/explosion.wav");
-    var disparoSnd = new Audio("Assets/laser.wav");
+    var disparoSnd = new Audio("Assets/GunShot.wav");
+    var defendSnd = new Audio("Assets/ExplosionMetal.wav");
+    var looseSnd = new Audio("Assets/WaterSurfaceExplosion01.wav");
 
     //Variables que guardan el estado del barco
     var defending2 = false;
@@ -47,7 +49,7 @@
         ctx = canvas.getContext("2d");
 
         preloadStuff();
-        
+       
        gameplay2();
         
     }
@@ -156,15 +158,17 @@
                 //checar si el otro barco se está defendiendo
                 if (defending2 == true) {
                     //No pasa nada.
+                    defendSnd.play();
                     balasAzules.pop();
                 } else {
                     //se guarda el daño realizado
                     lifeBarcoAmarillo.push(balasAzules.pop());
+                    snd.play();
                 }
                 //se revisa si ya se hizo el suficiente daño.
                 if (lifeBarcoAmarillo.length == 10) {
                     barco2 = sprites2.damaged;
-                    snd.play();
+                    looseSnd.play();
                     alert("Game Over! Player 1 wins!");
                     stopGameplay();
                 }
@@ -187,19 +191,21 @@
                 //si el otro barco se está defendiendo
                 if (defending1 == true) {
                     //no hacer daño
+                    defendSnd.play();
                     balas.pop();
                 } else {
                     // En caso de que si esté defendiendo.
                     //Se incrementa el daño del barco de jugador 1.
                     lifeBarco1.push(balas.pop());
+                    snd.play();
                 }
                 
                 //Se revisa si ya se incrementó el daño lo suficiente como para la desutricción del barco.
                 if (lifeBarco1.length == 10) {
                     //Animación de la explosión
                     barco1 = sprites1.damaged;
-                    snd.play();
-                    alert("Game Over!, player 1 wins!");
+                    looseSnd.play();
+                    alert("Game Over!, player 2 wins!");
                     stopGameplay();
                 }
                 
@@ -305,7 +311,7 @@
                     } else {
                         defending1 = false;
                         balasAzules.push({ x: 300, y: 500 });
-                        disparoSnd.play;
+                        disparoSnd.play();
                         ready1 = false;
                         break;
                     }
@@ -322,9 +328,12 @@
                 } else {
                     defending1 = false;
                     balasAzules.push({ x: 300, y: 500 });
-                    disparoSnd.play;
+                    disparoSnd.play();
                     ready1 = false;
                 }
+            } else if (pointerx > 400 && pointery > 380) {
+                defending1 = true;
+                alert("defense");
             }
 
             if (pointerx > 400 && pointery < 300) {
@@ -332,11 +341,15 @@
                     barco2 = sprites2.ready;
                     ready2 = true;
                 } else {
+                    defending2 = false;
                     balas.push({ x: 500, y: 200 });
                     disparoSnd.play();
                     ready2 = false;
                     barco2 = sprites2.normal;
                 }
+            } else if (pointerx < 400 && pointery < 300) {
+                defending2 = true;
+                alert("defense");
             }
         };
     }
