@@ -28,9 +28,9 @@
     var balasAzules = new Array(); //Array que contiene las balas disparadas por el jugador 1.
 
     // Variables que guardan los sonidos del video juego.
-    var snd = new Audio("Assets/explosion.wav");
+    var defendSnd = new Audio("Assets/explosion.wav");
     var disparoSnd = new Audio("Assets/GunShot.wav");
-    var defendSnd = new Audio("Assets/ExplosionMetal.wav");
+    var snd = new Audio("Assets/ExplosionMetal.wav");
     var looseSnd = new Audio("Assets/WaterSurfaceExplosion01.wav");
 
     //Variables que guardan el estado del barco
