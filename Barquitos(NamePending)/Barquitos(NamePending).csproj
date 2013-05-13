@@ -73,6 +73,7 @@
     <Content Include="Assets\GunShot.wav" />
     <Content Include="Assets\mar.png" />
     <Content Include="Assets\partearriba.png" />
+    <Content Include="Assets\reload.mp3" />
     <Content Include="Assets\shieldBtn.png" />
     <Content Include="Assets\WaterSurfaceExplosion01.wav" />
     <Content Include="explode.png" />

@@ -32,6 +32,7 @@
     var disparoSnd = new Audio("Assets/GunShot.wav");
     var snd = new Audio("Assets/ExplosionMetal.wav");
     var looseSnd = new Audio("Assets/WaterSurfaceExplosion01.wav");
+    var reload = new Audio("Assets/reload.mp3");
 
     //Variables que guardan el estado del barco
     var defending2 = false;
@@ -271,6 +272,7 @@
                     barco2 = sprites2.ready;
                     defending2 = false;
                     ready2 = true;
+                    reload.play();
                     break;
                 case 68:
                     //El barco se defiende.
@@ -283,6 +285,7 @@
                     if (ready2 == false) {
                         barco2 = sprites2.ready;
                         ready2 = true;
+                        reload.play();
                         break;
                     } else {
                         balas.push({ x: 500, y: 200 });
@@ -297,6 +300,7 @@
                     //No se tiene el sprite para esto por el momento xD
                     defending1 = false;
                     ready1 = true;
+                    reload.play();
                     break;
                 case 39:
                     //defend2
@@ -307,6 +311,7 @@
                     //Dispara!
                     if (ready1 == false) {
                         ready1 = true;
+                        reload.play();
                         break;
                     } else {
                         defending1 = false;
@@ -325,6 +330,7 @@
             if (pointerx > 0 && pointerx < 400 && pointery > 380) {
                 if (ready1 == false) {
                     ready1 = true;
+                    reload.play();
                 } else {
                     defending1 = false;
                     balasAzules.push({ x: 300, y: 500 });
@@ -339,6 +345,7 @@
             if (pointerx > 400 && pointery < 300) {
                 if (ready2 == false) {
                     barco2 = sprites2.ready;
+                    reload.play();
                     ready2 = true;
                 } else {
                     defending2 = false;
